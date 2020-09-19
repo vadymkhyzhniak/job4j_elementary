@@ -14,4 +14,11 @@ public class CounterTest {
         assertThat(rsl, is(expected));
     }
 
+    @Test
+    public void whenSumEvenNumbersFromTwoToSevenThenTwelve() {
+        int rsl = Counter.sumByEven(2, 7);
+        int expected = 12;
+        assertThat(rsl, is(expected));
+    }
+
 }
