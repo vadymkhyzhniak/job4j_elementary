@@ -13,13 +13,12 @@ public class Machine {
     public int[] change(int money, int price) {
         int[] rsl = new int[100];
         int size = 0;
-        int new_m = money - price;
-        int j = 0;
+        int newM = money - price;
         for (int i = 0; i < COINS.length; i++) {
-            while (COINS[i] <= new_m) {
-                rsl[j] = COINS[i];
-                new_m -= COINS[i];
-                j++; size++;
+            while (COINS[i] <= newM) {
+                rsl[size] = COINS[i];
+                newM -= COINS[i];
+                size++;
             }
         }
         return Arrays.copyOf(rsl, size);
