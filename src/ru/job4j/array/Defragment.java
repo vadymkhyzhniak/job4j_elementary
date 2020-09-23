@@ -7,7 +7,6 @@ public class Defragment {
                 int point = index; /* указатель на null ячейку. */
                 for (int nextNotNull = point + 1; nextNotNull < array.length; nextNotNull++) {
                     if (array[nextNotNull] != null) {
-                        // через готовый SwitchArray.swap() не получится, потому что в том задании числа были, а здесь текст
                         String temp = array[point];
                         array[point] = array[nextNotNull];
                         array[nextNotNull] = temp;
