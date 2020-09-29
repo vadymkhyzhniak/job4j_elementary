@@ -1,8 +1,10 @@
 package ru.job4j.oop;
 
 public class Surgeon extends Doctor {
-    int appendixDeleted;
+    private int appendixDeleted;
 
-    public boolean likesCutPeople() { }
+    public boolean likesCutPeople() {
+        return true;
+    }
 }
 

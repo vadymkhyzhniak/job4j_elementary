@@ -1,7 +1,9 @@
 package ru.job4j.oop;
 
 public class Builder extends Engineer {
-    String hatSize;
+    private String hatSize;
 
-    public boolean canDrinkALot() { }
+    public boolean canDrinkALot() {
+        return true;
+    }
 }

@@ -1,7 +1,9 @@
 package ru.job4j.oop;
 
 public class Dentist extends Doctor {
-    String favChewGum;
+    private String favChewGum;
 
-    public boolean likesChildTears() { }
+    public boolean likesChildTears() {
+        return true;
+    }
 }

@@ -1,7 +1,9 @@
 package ru.job4j.oop;
 
 public class Programmer extends Engineer {
-    String favAnime;
+    private String favAnime;
 
-    public boolean stupidTShirt() { }
+    public boolean stupidTShirt() {
+        return true;
+    }
 }
